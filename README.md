@@ -14,6 +14,12 @@ numpy == 1.21.6
 
 torch == 1.7.0
 
+# inference
+
+```
+python predict.py --task bp --pro 3 --gpu 0
+```
+
 # File Structure
 
 ├── cross_model - Download
@@ -55,9 +61,3 @@ torch == 1.7.0
 ├── result - final result
 
 ├── test
-
-# inference
-
-```
-python predict.py --task bp --pro 3 --gpu 0
-```
