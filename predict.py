@@ -287,10 +287,3 @@ def rerank(args):
 
 if __name__ == '__main__':
     rerank(args)
-
-
-# nohup python -u predict.py  --gpu 2 --task cc> predictcc1.log 2>&1 &
-# nohup python -u predict.py  --gpu 3 --task mf> predictmf1.log 2>&1 &
-# python -u predict.py  --gpu 2 --task cc  --data dev_new
-# nohup python -u predict.py  --gpu 2 --task mf --pro 3 --data dev_new > predict2.log 2>&1 &
-# python predict.py  --gpu 1 --task cc --pro 0 --data dev
