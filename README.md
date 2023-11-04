@@ -45,15 +45,6 @@ torch == 1.7.0
 
 └────── *_t5_scores.npy - score cache
 
-├── train
-
-└────── *_all_neg.txt
-
-└────── *_t5_all_neg.json
-
-└────── *_t5_all_pos.json
-
-└────── *_t5_texts.npy
 
 ├── go_index
   
@@ -65,6 +56,8 @@ torch == 1.7.0
 
 ├── test
 
-├── data_preprocess.py 
+# inference
 
-└── train.py
+```
+python predict.py --task bp --pro 3 --gpu 0
+```
