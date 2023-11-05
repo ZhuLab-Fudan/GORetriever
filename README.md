@@ -30,6 +30,8 @@ python predict.py --task bp --pro 3 --gpu 0
 
 ├── data - training and testing data
 
+└────── golden - evaluate files
+
 └────── *_trans.txt - train set
 
 └────── test.txt - test set
