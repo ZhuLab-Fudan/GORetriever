@@ -14,6 +14,12 @@ numpy == 1.21.6
 
 torch == 1.7.0
 
+faiss-cpu == 1.7.1.post2
+
+pygaagle == 0.0.3.1
+
+nltk == 3.5
+
 # inference
 
 ```
