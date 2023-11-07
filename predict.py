@@ -18,10 +18,10 @@ from pygaggle.rerank.transformer import MonoT5
 from tqdm import tqdm
 import numpy as np
 import requests
-# from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 import random 
 import nltk
-# from sentence_transformers import CrossEncoder
+from sentence_transformers import CrossEncoder
 from transformers import T5ForConditionalGeneration
 import torch.nn as nn
 
@@ -144,17 +144,16 @@ def data_extract(args):
 
 
 def all_retrieval_dict(args):
-    save_file = f'./test/{args.task}_retrieval_all_temp.npy'
-    # if os.path.exists(save_file):
-    #     data = np.load(save_file, allow_pickle=True).item()
-    #     print(save_file)
-    #     print("All retrieval end!") 
-    #     return data
+    save_file = f'./test/{args.task}_retrieval_all.npy'
+    if os.path.exists(save_file):
+        data = np.load(save_file, allow_pickle=True).item()
+        print(save_file)
+        print("All retrieval end!") 
+        return data
     searcher = LuceneSearcher('./pro_index/')
     pro2text = data_extract(args)
     pro2go = np.load(f'./file/{args.task}_pro2go.npy', allow_pickle=True).item()
     retrieval_dict = {}
-    print("All Retrieval Start...")
     for proid in tqdm(pro2text):
         k = 0
         res = []
@@ -189,11 +188,11 @@ def retrieval(args):
     save_file = f'./test/{args.task}_retrieval.npy'
     if args.pro != '0':
         save_file = save_file.replace('retrieval', f'retrieval_pro_{args.pro}')
-    # if os.path.exists(save_file):
-    #     data = np.load(save_file, allow_pickle=True).item()
-    #     print(save_file)
-    #     print("retrieval end!") 
-    #     return data
+    if os.path.exists(save_file):
+        data = np.load(save_file, allow_pickle=True).item()
+        print(save_file)
+        print("retrieval end!") 
+        return data
     retrieval_dict = all_retrieval_dict(args)
     d = {}
     for proid in tqdm(retrieval_dict):
