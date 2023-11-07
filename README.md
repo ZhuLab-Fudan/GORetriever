@@ -6,17 +6,17 @@ GORetrieval: A Novel Two-Stage Literature Based Deep Information Retrieval Frame
 
 python=3.8
 
-sentence-transformers==2.2.2
+sentence-transformers == 2.2.2
 
-pyserini==0.10.0
+pyserini == 0.10.0
 
-pygaggle==0.0.3.1
+pygaggle == 0.0.3.1
 
-faiss-cpu==1.7.4
+faiss-cpu == 1.7.4
 
-torch==1.7.2
+torch == 1.7.2
 
-numpy==1.23.5
+numpy == 1.23.5
 
 # inference
 
