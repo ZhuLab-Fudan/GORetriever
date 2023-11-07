@@ -4,13 +4,19 @@ GORetrieval: A Novel Two-Stage Literature Based Deep Information Retrieval Frame
 
 # Requirements
 
-```
-conda create -n goretrieval python=3.8
+python=3.8
 
-conda activate goretrieval
+sentence-transformers==2.2.2
 
-pip install -r requirements.txt
-```
+pyserini==0.10.0
+
+pygaggle==0.0.3.1
+
+faiss-cpu==1.7.4
+
+torch==1.7.2
+
+numpy==1.23.5
 
 # inference
 
