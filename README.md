@@ -10,18 +10,6 @@ conda activate -n goretrieval python=3.8
 pip install -r requirements.txt
 ```
 
-faiss-cpu == 1.7.1.post2
-
-pygaagle == 0.0.3.1
-
-nltk == 3.5
-
-faiss-cpu == 1.7.1.post2
-
-pygaagle == 0.0.3.1
-
-nltk == 3.5
-
 # inference
 
 ```
