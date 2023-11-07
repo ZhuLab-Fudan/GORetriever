@@ -5,7 +5,9 @@ GORetrieval: A Novel Two-Stage Literature Based Deep Information Retrieval Frame
 # Requirements
 
 ```
-conda activate -n goretrieval python=3.8
+conda create -n goretrieval python=3.8
+
+conda activate goretrieval
 
 pip install -r requirements.txt
 ```
