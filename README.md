@@ -20,6 +20,8 @@ numpy == 1.23.5
 
 # inference
 
+Download cross_model
+
 ```
 python predict.py --task bp --pro 3 --gpu 0
 ```
