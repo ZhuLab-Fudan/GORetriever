@@ -1,6 +1,6 @@
 # GORetrieval
 
-GORetrieval: A Novel Two-Stage Literature Based Deep Information Retrieval Framework for Accurate Protein Function Annotation
+GORetrieval: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for precise protein function annotation
 
 # Requirements
 
