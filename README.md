@@ -35,6 +35,11 @@ pro: number of retrieved proteins, set k = 3 for MFO and BPO and k = 2 for CCO
 
 gpu: cuda number, default as 0.
 
+eg:
+```
+python predict.py --task bp --pro 3 --gpu 0
+```
+
 # start your own experiments
 
 If you want to start your new experiment, delete the data in folders **file, pro_index, go_index**. Otherwise the program will reason based on these pre-existing files.
