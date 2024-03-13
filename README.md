@@ -134,8 +134,8 @@ Delete (will be rebuilt after running predict.py):
 
 ├── result - final result
 
-├── test
+├── train.py
 
 ├── predict.py
 
-├── data_preprocess.py
+└── data_preprocess.py
