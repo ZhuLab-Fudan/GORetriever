@@ -14,8 +14,6 @@ pygaggle == 0.0.3.1
 
 faiss-cpu == 1.7.4
 
-torch == 1.7.2
-
 numpy == 1.23.5
 
 nltk == 3.8.1
