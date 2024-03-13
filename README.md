@@ -8,7 +8,7 @@ python=3.8
 
 sentence-transformers == 2.2.2
 
-pyserini == 0.10.0
+pyserini == 0.10.1.0
 
 pygaggle == 0.0.3.1
 
