@@ -46,7 +46,7 @@ Rewrite:
 - proid2name.npy - proteinid -> protein name dictionary for the PubMed article you will use in the traing and testing data
 - go_index, pro_index - index built by pyserini
 
-Delete (will be rebuilt through run predict.py):
+Delete (will be rebuilt after running predict.py):
 
 - *_dev_t5_texts.npy - extracted sentences
 - *_retrieval_all.npy
