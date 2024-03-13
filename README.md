@@ -1,6 +1,6 @@
 # GORetrieval
 
-GORetrieval: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for precise protein function annotation
+GORetrieval: Reranking protein-description-based GO candidates by literature-driven deep retriever for function annotation
 
 # Requirements
 
@@ -20,11 +20,38 @@ numpy == 1.23.5
 
 # inference
 
-Download cross_model
+Download cross_encoder from https://drive.google.com/file/d/11W51FnM62Z79qGPkuZHRzAv6Bx_L1Mah/view?usp=sharing into folder **cross_model**
 
 ```
-python predict.py --task bp --pro 3 --gpu 0
+python predict.py \
+  --task [branch] \
+  --pro [k] \
+  --gpu [n]
 ```
+
+branch: bp, mf, cc
+
+pro: number of retrieved proteins, set k = 3 for MFO and BPO and k = 2 for CCO 
+
+gpu: cuda number, default as 0.
+
+# start your own experiments
+
+If you want to start your new experiment, delete the data in folders **file, pro_index, go_index**. Otherwise the program will reason based on these pre-existing files.
+
+Rewrite:
+
+- *_pro2go.npy - proteinid -> GO list dictionary in the training data
+- pmid2text.npy - Pubmed ID -> title and abstract dictionary for the PubMed article you will use in the traing and testing data
+- proid2name.npy - proteinid -> protein name dictionary for the PubMed article you will use in the traing and testing data
+- go_index, pro_index - index build by pyserini
+
+Delete (will be rebuilt through run predict.py):
+
+- *_dev_t5_texts.npy - extracted sentences
+- *_retrieval_all.npy
+- *_retrieval_pro_3.npy - retrieval result
+- *_t5_scores.npy - score cache
 
 # File Structure
 
@@ -44,7 +71,7 @@ python predict.py --task bp --pro 3 --gpu 0
 
 ├── file
 
-└────── bp_pro2go.npy - proteinid -> GO list
+└────── *_pro2go.npy - proteinid -> GO list
 
 └────── pmid2text.npy - Pubmed ID -> title and abstract 
 
