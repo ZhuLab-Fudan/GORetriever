@@ -76,7 +76,7 @@ python predict.py --task bp --pro 3 --gpu 0
 
 # Start your own experiments
 
-If you want to start your new experiment, delete the data in folders **file, pro_index, go_index**. Otherwise the program will reason based on these pre-existing files.
+If you want to start your new experiment, delete the files in folders **test, file, pro_index, go_index**. Otherwise the program will reason based on these pre-existing files.
 
 Rewrite:
 
@@ -118,6 +118,7 @@ Delete (will be rebuilt after running predict.py):
 
 └────── proid2name.npy - proteinid -> protein name
 
+├── test
 
 └────── *_dev_t5_texts.npy - extracted sentences
 
@@ -126,7 +127,6 @@ Delete (will be rebuilt after running predict.py):
 └────── *_retrieval_pro_3.npy - retrieval result
 
 └────── *_t5_scores.npy - score cache
-
 
 ├── go_index
 
