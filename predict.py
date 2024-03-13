@@ -1,9 +1,10 @@
 import os
 import argparse
 parser = argparse.ArgumentParser(description='manual to this script')
-parser.add_argument("--gpu", type=str, default='1')
+parser.add_argument("--gpu", type=str, default='0')
 parser.add_argument("--task", type=str, default='cc')
 parser.add_argument("--pro", type=str, default='2')
+parser.add_argument("--file", type=str, default='./data/test.txt')
 
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
@@ -92,7 +93,7 @@ def data_extract(args):
     proid2name = np.load('./file/proid2name.npy', allow_pickle=True).item()
     pmid2text = np.load('./file/pmid2text.npy', allow_pickle=True).item()
     pro2text = {}
-    with open('./data/test.txt') as f:
+    with open(args.file) as f:
         lines = f.readlines()
         for line in tqdm(lines):
             line = line.split('\t')
