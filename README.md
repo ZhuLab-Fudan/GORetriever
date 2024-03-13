@@ -19,9 +19,7 @@ torch == 1.7.2
 numpy == 1.23.5
 
 ```
-
 pip install -r requirements.txt
-
 ```
 
 # Train
