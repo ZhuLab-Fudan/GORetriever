@@ -26,14 +26,17 @@ Download cross_encoder from https://drive.google.com/file/d/11W51FnM62Z79qGPkuZH
 python predict.py \
   --task [branch] \
   --pro [k] \
-  --gpu [n]
+  --gpu [n] \
+  --file [file]
 ```
 
 branch: bp, mf, cc
 
 pro: number of retrieved proteins, set k = 3 for MFO and BPO and k = 2 for CCO 
 
-gpu: cuda number, default as 0.
+gpu: cuda number, default as 0
+
+file: filename for test set, eg: ./data/test.txt
 
 eg:
 ```
