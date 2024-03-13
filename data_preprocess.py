@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '3'
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 import json
 from pyserini.search.lucene import LuceneSearcher
 from tqdm import tqdm
@@ -73,7 +73,7 @@ def data_t5_extract(task):
     proid2name = np.load('./file/proid2name.npy', allow_pickle=True).item()
     pro2text = {}
     pmid2text = np.load('./file/pmid2text.npy', allow_pickle=True).item()
-    with open(f'./data/{task}_trans.txt') as f:
+    with open(f'./data/{task}_train.txt') as f:
         lines = f.readlines()
         for line in tqdm(lines):
             line = line.split('\t')
@@ -195,7 +195,7 @@ def text2trainjson(task):
                 })
             json.dump(data, wf, indent=2)
     
-    with open(f'./data/{task}_trans.txt') as f:
+    with open(f'./data/{task}_train.txt') as f:
         data = []
         with open(f'./train/{task}_t5_all_pos.json', 'w') as wf:
             lines = f.readlines()
