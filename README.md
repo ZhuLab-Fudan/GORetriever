@@ -18,7 +18,7 @@ torch == 1.7.2
 
 numpy == 1.23.5
 
-# inference
+# Inference
 
 Download cross_encoder from https://drive.google.com/file/d/11W51FnM62Z79qGPkuZHRzAv6Bx_L1Mah/view?usp=sharing into folder **cross_model**
 
@@ -40,7 +40,7 @@ eg:
 python predict.py --task bp --pro 3 --gpu 0
 ```
 
-# start your own experiments
+# Start your own experiments
 
 If you want to start your new experiment, delete the data in folders **file, pro_index, go_index**. Otherwise the program will reason based on these pre-existing files.
 
