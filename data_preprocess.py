@@ -123,13 +123,13 @@ def build_neg(task):
     return go list
     '''
     searcher = LuceneSearcher('./pro_index/')
-    with open(f'./data/{task}_trans.txt') as f:
+    with open(f'./data/{task}_train.txt') as f:
         pro2go = {}
         lines = f.readlines()
         for line in lines:
             l = line.split('\t')
             pro2go[l[0]] = pro2go.get(l[0], []) + [l[1]]
-    with open(f'./data/{task}_trans.txt') as f:
+    with open(f'./data/{task}_train.txt') as f:
         lines = f.readlines()
         pro2doc = {}
         pro2sample = {}
