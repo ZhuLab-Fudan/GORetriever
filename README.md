@@ -1,6 +1,6 @@
-# GORetrieval
+# GORetriever
 
-GORetrieval: Reranking protein-description-based GO candidates by literature-driven deep retriever for function annotation
+Official code for GORetriever
 
 # Requirements
 
