@@ -81,8 +81,8 @@ If you want to start your new experiment, delete the files in folders **test, fi
 Rewrite:
 
 - *_pro2go.npy - proteinid -> GO list dictionary in the training data
-- pmid2text.npy - Pubmed ID -> title and abstract dictionary for the PubMed article you will use in the traing and testing data
-- proid2name.npy - proteinid -> protein name dictionary for the PubMed article you will use in the traing and testing data
+- pmid2text.npy - Pubmed ID -> title and abstract dictionary for the PubMed article you will use in the training and testing data
+- proid2name.npy - proteinid -> protein name dictionary for the PubMed article you will use in the training and testing data
 - go_index, pro_index - index built by pyserini
 
 Delete (will be rebuilt after running predict.py):
