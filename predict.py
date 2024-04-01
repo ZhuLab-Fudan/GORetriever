@@ -119,7 +119,7 @@ def data_extract(args):
 
     text_score = {}
     for pro in tqdm(pro2text): 
-        query = f"what is the {task_def[args.task]} of protein {proname}?"
+        query = f"what is the {task_def[args.task]} of protein {proid2name[pro]}?"
         sentences = pro2text[pro]
         if len(sentences) < 3:
             print(sentences)
