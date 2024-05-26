@@ -18,37 +18,6 @@ numpy == 1.23.5
 
 nltk == 3.8.1
 
-# Train
-
-1. prepare your data
-
-Add your own data to ./data/{bp/mf/cc}_train.txt.
-
-The format is:
-
-```
-protein_id\tGO_id\tPubMed_id\n
-B5KVH4	GO:0003674	28121438
-```
-
-Then,
-
-```
-python data_process.py
-```
-
-2. train
-
-```
-python train.py --task [branch]
-```
-
-branch: bp/mf/cc, eg,
-
-```
-python train.py --task bp
-```
-
 # Inference
 
 Download cross_encoder from https://drive.google.com/file/d/11W51FnM62Z79qGPkuZHRzAv6Bx_L1Mah/view?usp=sharing into folder **cross_model**
@@ -108,8 +77,6 @@ Delete (will be rebuilt after running predict.py):
 
 └────── test.txt - test set
 
-├── train - training dataset
-
 ├── file
 
 └────── *_pro2go.npy - proteinid -> GO list
@@ -133,8 +100,6 @@ Delete (will be rebuilt after running predict.py):
 ├── pro_index
 
 ├── result - final result
-
-├── train.py
 
 ├── predict.py
 
