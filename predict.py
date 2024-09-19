@@ -12,7 +12,7 @@ print(args)
 
 import json
 from pyserini import search
-from pyserini.search import SimpleSearcher as LuceneSearcher
+from pyserini.search import SimpleSearcher
 # from pyserini.search.lucene import LuceneSearcher
 from pygaggle.rerank.base import Query, Text
 from pygaggle.rerank.transformer import MonoT5
@@ -151,7 +151,7 @@ def all_retrieval_dict(args):
         print(save_file)
         print("All retrieval end!") 
         return data
-    searcher = LuceneSearcher('./pro_index/')
+    searcher = SimpleSearcher('./pro_index/')
     pro2text = data_extract(args)
     pro2go = np.load(f'./file/{args.task}_pro2go.npy', allow_pickle=True).item()
     retrieval_dict = {}
@@ -223,7 +223,7 @@ def rerank(args):
     if os.path.exists(score_dict):
         print("score cache: ", score_dict)
         score = np.load(score_dict, allow_pickle=True).item()
-    goreader = LuceneSearcher('./go_index/')
+    goreader = SimpleSearcher('./go_index/')
     proid2name = np.load('./file/proid2name.npy', allow_pickle=True).item()
     model = CrossEncoder(f'./cross_model/{args.task}_PubMedBERT_epoch1/', max_length=512)
     data = []
