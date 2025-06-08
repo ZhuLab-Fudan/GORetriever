@@ -1,5 +1,5 @@
 We have released large-scale predictions using **GORetriever** on all 420,000 **Swiss-Prot** proteins.  
-  👉 [Results available here](https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result)
+  👉 [Results available here]([https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result](https://drive.google.com/file/d/1FoKshfeQ_JeHCfRJWaIjjL-GG586Tz1B/view?usp=sharing)
 
 |Data|Description|Size|
 | ---- | ---- | ---- |
