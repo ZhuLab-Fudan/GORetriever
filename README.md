@@ -1,6 +1,6 @@
 # GORetriever
 
-Official code for GORetriever: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for protein-function-annotation
+Official code for [GORetriever: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for protein-function-annotation](https://academic.oup.com/bioinformatics/article/40/Supplement_2/ii53/7749084)
 
 ## News
 
