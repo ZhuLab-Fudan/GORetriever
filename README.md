@@ -9,7 +9,7 @@ Official code for [GORetriever: Reranking protein-description-based GO candidate
   
   👉 [Results available here](https://drive.google.com/file/d/1FoKshfeQ_JeHCfRJWaIjjL-GG586Tz1B/view?usp=sharing)
   
-  👉 [For more details](https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result)
+  👉 [For more details](https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result/README.md)
 
 - **2025.04.07**  
   Our follow-up work **GOAnnotator: Accurate Protein Function Annotation Using Automatically Retrieved Literature** has been accepted to **ISMB/ECCB 2025**!  
