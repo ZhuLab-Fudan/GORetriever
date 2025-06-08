@@ -5,7 +5,7 @@ Official code for [GORetriever: Reranking protein-description-based GO candidate
 ## News
 
 - **2025.06.08**  
-  We have released large-scale predictions using **GORetriever** on all 420,000 proteins.
+  We have released large-scale predictions using **GORetriever** on all 420,000 **Swiss-Prot** proteins.
   
   👉 [Results available here](https://drive.google.com/file/d/1FoKshfeQ_JeHCfRJWaIjjL-GG586Tz1B/view?usp=sharing)
   
