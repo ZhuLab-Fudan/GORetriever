@@ -2,7 +2,7 @@
 
 Official code for GORetriever: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for protein-function-annotation
 
-# News
+## News
 
 - **2025.06.08**  
   We have released large-scale predictions using **GORetriever** on all 420,000 proteins.
