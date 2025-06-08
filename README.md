@@ -1,6 +1,22 @@
 # GORetriever
 
-Official code for GORetriever
+Official code for GORetriever: Reranking protein-description-based GO candidates by literature-driven deep information retrieval for protein-function-annotation
+
+# 📰 News
+
+- **2025.06.08**  
+  We have released large-scale predictions using **GORetriever** on all 420,000 proteins.
+  
+  👉 [Results available here](https://drive.google.com/file/d/1FoKshfeQ_JeHCfRJWaIjjL-GG586Tz1B/view?usp=sharing)
+  
+  👉 [For more details](https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result)
+
+- **2025.04.07**  
+  Our follow-up work **GOAnnotator: Accurate Protein Function Annotation Using Automatically Retrieved Literature** has been accepted to **ISMB/ECCB 2025**!  
+  👉 Code available at [GOAnnotator GitHub](https://github.com/ZhuLab-Fudan/GOAnnotator)
+
+- **2024.05.30**  
+  Our paper on **GORetriever** has been accepted to **ECCB 2024**!
 
 # Requirements
 
