@@ -1,4 +1,4 @@
-We have released large-scale predictions using **GORetriever** on all 420,000 proteins.  
+We have released large-scale predictions using **GORetriever** on all 420,000 **Swiss-Prot** proteins.  
   👉 [Results available here](https://github.com/ZhuLab-Fudan/GORetriever/tree/main/result)
 
 |Data|Description|Size|
